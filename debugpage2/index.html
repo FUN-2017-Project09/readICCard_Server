@@ -1,0 +1,64 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<html>
+  <head><title>form</title></head>
+  <body>
+    <form action ="type/register.php" method="get">
+    <p>
+      ID 送信<br><br>
+      初回登録用<br>
+      node:
+        <input type="radio" name="node" value=1 checked="checked" />ノード1
+	<input type="radio" name="node" value=2 />ノード2
+	<input type="radio" name="node" value=3 />ノード3
+	<br>
+      <INPUT TYPE = "text" NAME="ID">
+      <INPUT TYPE = "SUBMIT" VALUE="登録">      
+    </form><br>
+
+    <form action ="type/receive.php" method="get">
+      登録済みユーザ用<br>
+      node:
+        <input type="radio" name="node" value=1 checked="checked" />ノード1
+        <input type="radio" name="node" value=2 />ノード2
+	<input type="radio" name="node" value=3 />ノード3
+	<br>
+      <INPUT TYPE = "text" NAME="ID">
+      <INPUT TYPE = "SUBMIT" VALUE="アクセス">
+    </form>
+    <br><br>
+
+    <form action ="type/search.php" method="get">
+      ID 検索<br>
+      <INPUT TYPE = "text" NAME="ID">
+      <INPUT TYPE = "SUBMIT" VALUE="検索">
+    </form>
+    <br><br>
+
+    <form action ="type/delete.php" method="get">
+      ID 削除<br>
+      <INPUT TYPE = "text" NAME="ID">
+      <INPUT TYPE = "SUBMIT" VALUE="削除">
+    </form>
+    <br><br>
+
+    <form action ="type/reset.php" method="get">
+      アクセス回数リセット<br>
+      node:
+        <input type="radio" name="node" value=1 checked="checked" />ノード1
+	<input type="radio" name="node" value=2 />ノード2
+	<input type="radio" name="node" value=3 />ノード3
+	<br>
+      <INPUT TYPE = "text" NAME="ID">
+      <INPUT TYPE = "SUBMIT" VALUE="リセット">
+    </form>
+    <br>
+    <a href="tables/show.php">
+      レコード一覧表</a><br>
+      <br><br>
+    <a href="tables/delete.php">
+      レコード一覧表(削除機能付き)</a><br>
+      <br><br>
+    </form>
+  </body>
+</html>
