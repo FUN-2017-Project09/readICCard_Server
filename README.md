@@ -14,7 +14,7 @@ azureサーバとの接続ファイルが主
 
 ### Model.php
 
-###functions.php
+### functions.php
 
 ## Controller
 大文字のプログラムのところはそれぞれのところに本来の小文字のphpにクラスとして渡す
