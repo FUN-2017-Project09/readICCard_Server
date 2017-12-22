@@ -5,14 +5,15 @@ namespace MyApp\Model;
 class User extends \MyApp\Model {
 
   public function create($values) {
-    $stmt = $this->db->prepare("insert into login_users (email, password, created, modified) values (:email, :password, now(), now())");
+    
+    $stmt = $this->db->prepare("insert into login_users (email, password, created, modified) values (:email, :password, getdate(), getdate())");
     $res = $stmt->execute([
       ':email' => $values['email'],
       ':password' => password_hash($values['password'], PASSWORD_DEFAULT)
     ]);
-    if ($res === false) {
-      throw new \MyApp\Exception\DuplicateEmail();
-    }
+    #if ($res === false) {
+    # throw new \MyApp\Exception\DuplicateEmail();
+    #}
   }
 
   public function login($values) {

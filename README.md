@@ -1,2 +1,3 @@
 # readICCard_Server
-サーバー側のリポジトリ
+サーバー側のリポジトリ  
+実際にAzureで仕様したファイルはlogin_lbsである
